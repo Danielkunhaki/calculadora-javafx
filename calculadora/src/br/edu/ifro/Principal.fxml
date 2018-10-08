@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.PrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="223.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.PrincipalController">
    <children>
-      <TextField fx:id="txtNumero3" layoutX="22.0" layoutY="138.0" />
-      <TextField fx:id="txtNumero2" layoutX="22.0" layoutY="88.0" />
-      <Button fx:id="btnSoma" layoutX="183.0" layoutY="34.0" mnemonicParsing="false" onAction="#somar" text="Somar" />
-      <TextField fx:id="txtNumero1" layoutX="22.0" layoutY="34.0" />
-      <Label layoutX="22.0" layoutY="14.0" text="Numero1" />
-      <Label layoutX="22.0" layoutY="71.0" text="Numero2" />
-      <Label layoutX="22.0" layoutY="121.0" text="Numero3" />
-      <Button fx:id="btnSubtrair" layoutX="183.0" layoutY="88.0" mnemonicParsing="false" onAction="#subtrair" text="Subtrair" />
-      <Button fx:id="btnSoma" layoutX="183.0" layoutY="138.0" mnemonicParsing="false" onAction="#somar" text="Resultado" />
+      <TextField fx:id="txtResultado" editable="false" layoutX="22.0" layoutY="164.0" />
+      <TextField fx:id="txtNumero2" layoutX="22.0" layoutY="117.0" />
+      <TextField fx:id="txtNumero1" layoutX="22.0" layoutY="64.0" />
+      <Label layoutX="22.0" layoutY="47.0" text="Numero1" />
+      <Label layoutX="22.0" layoutY="93.0" text="Numero2" />
+      <Label layoutX="21.0" layoutY="143.0" text="Resultado" />
+      <Button fx:id="btnSoma" layoutX="202.0" layoutY="64.0" mnemonicParsing="false" onAction="#Soma" text="Soma" />
+      <Button fx:id="bntSubtrair" layoutX="202.0" layoutY="98.0" mnemonicParsing="false" onAction="#Subtrair" text="Subtrair" />
+      <Button fx:id="bntMultiplicação" layoutX="207.0" layoutY="131.0" mnemonicParsing="false" onAction="#Multiplicação" text="Multiplicação" />
+      <Button fx:id="bntDivisão" layoutX="203.0" layoutY="170.0" mnemonicParsing="false" onAction="#Divisão" text="Divisão" />
+      <Separator layoutX="15.0" layoutY="45.0" prefHeight="4.0" prefWidth="377.0" />
+      <ImageView fitHeight="33.0" fitWidth="76.0" layoutX="225.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/img/calculadora.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="22.0" layoutY="6.0" prefHeight="41.0" prefWidth="178.0" text="Calculadora">
+         <font>
+            <Font name="Arial Italic" size="27.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

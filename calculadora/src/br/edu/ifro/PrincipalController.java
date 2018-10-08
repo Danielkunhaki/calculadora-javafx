@@ -14,6 +14,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+
 /**
  *
  * @author 05048173295
@@ -28,7 +29,7 @@ public class PrincipalController implements Initializable {
             Button bntMultiplicação;
             Button bntDivisão;
     @FXML
-    private void somar(ActionEvent event) {
+    private void Soma(ActionEvent event) {
         Double num1 = Double.parseDouble(txtNumero1.getText());
         Double num2 = Double.parseDouble(txtNumero2.getText());
         Double result;        
@@ -40,17 +41,28 @@ public class PrincipalController implements Initializable {
     private void Subtrair(ActionEvent event){
         Double num1 = Double.parseDouble(txtNumero1.getText());
         Double num2 = Double.parseDouble(txtNumero2.getText());
-        //num2
+        
         Double result;
         result = (num1 - num2);
         txtResultado.setText(result.toString());
     }
     @FXML
     private void Multiplicação(ActionEvent event){
-        Double num1= Double.parseDouble(txtNumero1.getText());
-        Double num2= Double.parseDouble(txtNumero2).getText());
+        Double num1 = Double.parseDouble(txtNumero1.getText());
+        Double num2 = Double.parseDouble(txtNumero2.getText());
+        Double result;
+         result = num1 * num2;
+         txtResultado.setText(result.toString());
+        
     }
-    
+    @FXML
+    private void Divisão(ActionEvent event){
+      Double num1 = Double.parseDouble(txtNumero1.getText());
+      Double num2 = Double.parseDouble(txtNumero2.getText());
+      Double result;
+      result= num1 / num2;
+      txtResultado.setText(result.toString());
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
