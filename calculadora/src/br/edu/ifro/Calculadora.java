@@ -19,7 +19,7 @@ public class Calculadora extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Principal.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("view/Principal.fxml"));
         
         Scene scene = new Scene(root);
         

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.cell.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.cell.* ?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.HistoricoController">
+   <children>
+      <TableView fx:id="tbCalculadora" layoutX="98.0" layoutY="93.0" prefHeight="215.0" prefWidth="405.0">
+        <columns>
+          
+           <TableColumn prefWidth="60.0" text="ID">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="121.0" text="Número1">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Num1" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="114.0" text="Número2">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Num2" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="109.0" text="Resultado">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Resultado" />
+                </cellValueFactory>
+            </TableColumn> 
+            
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

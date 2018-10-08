@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="392.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.PrincipalController">
+   <children>
+      <Label layoutX="57.0" layoutY="30.0" text="Calculadora">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="106.0" text="1º Número">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="txtNum1" layoutX="57.0" layoutY="132.0" />
+      <TextField fx:id="txtNum2" layoutX="57.0" layoutY="201.0" />
+      <Label layoutX="57.0" layoutY="175.0" text="2º Número">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="249.0" text="Resultado">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtResultado" layoutX="57.0" layoutY="275.0" />
+      <Button fx:id="btnSomar" layoutX="250.0" layoutY="129.0" mnemonicParsing="false" onAction="#somar" prefHeight="25.0" prefWidth="73.0" text="Somar" />
+      <Button fx:id="btnSubtrair" layoutX="250.0" layoutY="180.0" mnemonicParsing="false" onAction="#subtrair" prefHeight="25.0" prefWidth="73.0" text="Subtrair" />
+      <Button fx:id="btnDividir" layoutX="250.0" layoutY="231.0" mnemonicParsing="false" onAction="#dividir" prefHeight="25.0" prefWidth="73.0" text="Dividir" />
+      <Button fx:id="btnMultiplicar" layoutX="250.0" layoutY="275.0" mnemonicParsing="false" onAction="#multiplicar" text="Multiplicar" />
+      <Button layoutX="57.0" layoutY="334.0" mnemonicParsing="false" onAction="#mostrarHistorico" prefHeight="25.0" prefWidth="115.0" text="Mostrar Histórico" />
+      <Button fx:id="btnSalvar" layoutX="250.0" layoutY="334.0" mnemonicParsing="false" onAction="#salvar" prefHeight="25.0" prefWidth="73.0" text="Salvar" />
+   </children>
+</AnchorPane>
